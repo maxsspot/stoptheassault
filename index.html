@@ -6,6 +6,17 @@
 		<title>STOP THE ASSAULT</title>
 	</head>
 	<body>
+		<script>
+			function shared () {
+			if (navigator.share) {
+  navigator.share({
+    url: "https://stoptheassault.netlify.app/",
+  })
+    .then(() => console.log('Successful share'))
+    .catch((error) => console.log('Error sharing', error));
+}	
+			}
+		</script>
 		<nav>
             <h1 id = "label">STOP THE ASSAULT</h1>
         </nav>
@@ -62,15 +73,6 @@ p {
 }
 </style>
 		
-		<script>
-			function shared () {
-			if (navigator.share) {
-  navigator.share({
-    url: "https://stoptheassault.netlify.app/",
-  })
-    .then(() => console.log('Successful share'))
-    .catch((error) => console.log('Error sharing', error));
-}	
-			}
+		
 	</body>
 </html>
